@@ -5,8 +5,10 @@ import sitemap from "@astrojs/sitemap";
 import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
-export default defineConfig({
-   vite: {
+const config = defineConfig({
+  base: "/blog",
+  trailingSlash: "always",
+  vite: {
     plugins: [tailwindcss()],
   },
   markdown: {
@@ -20,6 +22,9 @@ export default defineConfig({
     skipInline: false,
     drafts: true
   },
-  site: 'https://yourwebsite.com',
+  site: 'https://heypeony.com',
   integrations: [sitemap(), mdx()]
 });
+
+console.log("Astro configuration loaded, base set to:", config.base);
+export default config;
