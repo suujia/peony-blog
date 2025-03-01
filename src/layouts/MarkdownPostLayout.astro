@@ -83,4 +83,50 @@ Use AstroSeo in all the pages you want different Seo than the index page
       </div>
     </div>
   </section>
+  <section class="company-info">
+    <h2>Peony Health</h2>
+    <p>Expert nutrition guidance for chronic conditions and GLP-1 medications, personalized to your health goals.</p>
+    <ul>
+      <li>Mental Wellness</li>
+      <li>Neuroscience</li>
+      <li>Cognitive Health</li>
+      <li>Health</li>
+      <li>Medicine</li>
+      <li>Weight Loss</li>
+      <li>Diabetes</li>
+    </ul>
+    <div class="blog-posts">
+      <article>
+        <h3>Mastering the Mind - The Comprehensive Guide to Brain Health, Mental Clarity & Long-Term Mental Wellness</h3>
+        <p>A deep dive into the science of brain health and cognitive function. Learn evidence-based strategies for maintaining mental clarity, preventing cognitive decline, and optimizing brain performance throughout life.</p>
+        <p><strong>Date:</strong> Wed Feb 26</p>
+      </article>
+      <article>
+        <h3>The Complete Guide to Weight Loss Medications - Understanding Ozempic and Beyond</h3>
+        <p>A comprehensive exploration of modern weight loss medications, their mechanisms, benefits, and considerations. Learn about GLP-1 agonists like Ozempic, Wegovy, and other treatment options.</p>
+        <p><strong>Date:</strong> Wed Feb 26</p>
+      </article>
+      <article>
+        <h3>Understanding Diabetes - A Comprehensive Guide to Management and Treatment</h3>
+        <p>An in-depth look at diabetes, covering everything from diagnosis to daily management. Learn about different types of diabetes, treatment options, lifestyle modifications, and the latest research.</p>
+        <p><strong>Date:</strong> Wed Feb 26</p>
+      </article>
+    </div>
+    <footer>
+      <p>Join us to get our news in your inbox.</p>
+      <p> 2025 Peony Health.</p>
+    </footer>
+  </section>
+  <script>
+    console.log("Company info updated with Peony Health details loaded");
+    // Additional logging to validate assumptions about the company info section
+    const companyInfoSection = document.querySelector('.company-info');
+    if (companyInfoSection) {
+      console.log('Debug: Company info section successfully rendered.');
+      const blogPosts = companyInfoSection.getElementsByTagName('article');
+      console.log('Debug: Found', blogPosts.length, 'blog posts in the section.');
+    } else {
+      console.error('Error: Company info section not rendered.');
+    }
+  </script>
 </BaseLayout>
